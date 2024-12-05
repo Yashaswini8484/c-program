@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class SwapNumbers {
+    public static void main(String[] args) {
+        // Create a Scanner object to take input from the user
+        Scanner scanner = new Scanner(System.in);
+        
+        // Input: Read two numbers
+        System.out.print("Enter first number: ");
+        int num1 = scanner.nextInt();
+        
+        System.out.print("Enter second number: ");
+        int num2 = scanner.nextInt();
+        
+        // Display the numbers before swapping
+        System.out.println("Before swapping: ");
+        System.out.println("First number: " + num1);
+        System.out.println("Second number: " + num2);
+        
+        // Swapping the values
+        int temp = num1;  // Store num1 in temp
+        num1 = num2;      // Assign num2 to num1
+        num2 = temp;      // Assign temp (old num1) to num2
+        
+        // Display the numbers after swapping
+        System.out.println("After swapping: ");
+        System.out.println("First number: " + num1);
+        System.out.println("Second number: " + num2);
+        
+        scanner.close();  // Close the scanner
+    }
+}
